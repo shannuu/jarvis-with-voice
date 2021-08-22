@@ -27,7 +27,7 @@ def wishMe():
 
     else:
         speak("Good Evening!", 0)  
-    speak(f'hello {id}, iam jarvis, your personal assistant, please tell me how may i help you', 0)
+    speak(f'hello, iam jarvis, your personal assistant, please tell me how may i help you', 0)
 
 
 def sendEmail(from1, passw, to, content):
