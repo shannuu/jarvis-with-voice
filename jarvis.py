@@ -38,19 +38,7 @@ def sendEmail(from1, passw, to, content):
     server.sendmail(from1, to, content)
     server.close()
 
-def userlogin():
-    user = ['kushal', 'sudha', 'shushal', 'nikkisha', 'ayush']
-    global id
-    id = input('Enter your name: ')
-    exist = id in user
-    if exist == True:
-        speak(f'welcome {id}', 0)
-    else:
-        print("\nAccount does not exist!")
-        exit()
-
-userlogin()
-#wishMe()
+wishMe()
 print(f'\nIf you are stuck type help')
 while True:
     query = input("\nHukum do mere Aaka: ")
