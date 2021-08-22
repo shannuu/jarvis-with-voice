@@ -4,11 +4,6 @@ import wikipedia
 import webbrowser
 import smtplib
 import os
-import array as arr
-
-engine = pyttsx3.init('sapi5')
-voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[0].id)
 
 def speak(audio, torf):
     if torf == 0:
