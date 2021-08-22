@@ -118,7 +118,10 @@ while True:
         print('     wikipedia \'Anything\'')
         print('     search \'Anything\'')
         print('     play music')
-        print('     send email/gmail')        
+        print('     send email/gmail')
+        print('     time')
+        print('     speak')
+        print('     exit or bye')
 
     elif 'exit' or 'bye' in query:
         speak('have a good day', 0)
