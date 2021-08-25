@@ -101,4 +101,4 @@ while True:
         exit()
 
     else:
-        print(query)
+        print(f'Error: No Command Named {query}')
