@@ -90,15 +90,9 @@ while True:
         print('     wikipedia \'Anything\'')
         print('     search \'Anything\'')
         print('     play music')
-        print('     send email/gmail')
         print('     time')
         print('     speak')
-        print('     exit or bye')
-
-    elif 'exit' or 'bye' in query:
-        speak('have a good day', 0)
-        speak('exiting', 1)
-        exit()
+        print('     Control + C')
 
     else:
         print(f'Error: No Command Named {query}')
