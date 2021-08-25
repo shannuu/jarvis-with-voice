@@ -2,7 +2,10 @@
 
 ## INSTALLTION
   1. OPEN YOUR TERMINAL
-  2. INSTALL PYTTSX3 `pip install pyttsx3`
+  2. INSTALLING PYTTSX3 `pip install pyttsx3`
+  3. INSTALLING WIKIPEDIA `pip install wikipedia`
+  4. INSTALLING WEBBROWSER `pip install webbrowser`
+  5. INSTALLING DATETIME `pip install datetime`
 
 ## DOWNLOADING
   1. DOWNLOAD THE REPOSITORY BY CLICKING THE GREEN CODE BUTTON
