@@ -2,7 +2,6 @@ import pyttsx3
 import datetime
 import wikipedia
 import webbrowser
-import smtplib
 import os
 
 def speak(audio, torf):
@@ -23,15 +22,6 @@ def wishMe():
     else:
         speak("Good Evening!", 0)  
     speak(f'hello, iam jarvis, your personal assistant, please tell me how may i help you', 0)
-
-
-def sendEmail(from1, passw, to, content):
-    server = smtplib.SMTP('smtp.gmail.com', 587)
-    server.ehlo()
-    server.starttls()
-    server.login(from1, passw)
-    server.sendmail(from1, to, content)
-    server.close()
 
 wishMe()
 print(f'\nIf you are stuck type help')
@@ -89,23 +79,6 @@ while True:
         speak("what should i speak: ", 0)
         speach = input()
         speak(speach, 1)
-
-    elif 'email' in query:
-        try:
-            speak("What should I say?", 0)
-            from1 = input('From: ')
-            speak('from', 1)
-            passw = input("Password: ")
-            speak('password', 1)
-            to = input("To: ")
-            speak('to', 1)
-            content = input("Content: ")
-            speak("content", 1)    
-            sendEmail(from1, passw, to, content)
-            speak("Email has been sent!", 0)
-        except Exception as e:
-            print(e)
-            speak("Error", 0)    
 
     elif 'help' in query:
         print('\n\nCommands:')
