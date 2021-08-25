@@ -83,6 +83,9 @@ while True:
         speak("what should i speak: ", 0)
         speach = input()
         speak(speach, 1)
+        
+    elif 'exit' or 'bye' in query:
+        speak('Press Control \+ C to exit')
 
     elif 'help' in query:
         print('\n\nCommands:')
