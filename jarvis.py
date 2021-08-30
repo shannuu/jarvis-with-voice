@@ -88,7 +88,8 @@ while True:
         speak(speach, 1)
         
     elif 'exit' or 'bye' in query:
-        speak('Press Control \+ C to exit')
+        speak('Have a nice day', 0)
+        speak('exiting', 1)
 
     elif 'help' in query:
         print('\n\nCommands:')
