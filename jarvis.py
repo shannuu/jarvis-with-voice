@@ -87,9 +87,6 @@ while True:
         speach = input()
         speak(speach, 1)
         
-    elif 'exit' or 'bye' in query:
-        speak('Have a nice day', 0)
-        speak('exiting', 1)
 
     elif 'help' in query:
         print('\n\nCommands:')
@@ -101,5 +98,8 @@ while True:
         print('     speak')
         print('     Control + C to exit')
 
+    elif 'exit' or 'bye' in query:
+        speak('Have a nice day', 0)
+        speak('exiting', 1)
     else:
         print(f'Error: No Command Named {query}')
